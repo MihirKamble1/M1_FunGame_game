@@ -29,13 +29,13 @@ void main()
   
         case 3:  
         help();  
-        break;  
+        break;  1
   
           default:  
         exit(1);  
     }  
   
-  getch();  
+  getc;  
 }  
   
 void help()  
@@ -44,11 +44,11 @@ void help()
   
      printf("\n\n ************************* GAME HELP *************************");  
      printf("\n -------------------------------------------------------------------------");  
-     printf("\n .................... C program Quiz Game...........\n");  
+     printf("\n ....................FunGame...........\n");  
      printf("\n >> There will be a total of 20 questions");  
      printf("\n >> You will be given 4 options and you have to press 1, 2 ,3 or 4 for the");  
      printf("\n    right option");  
-     printf("\n >> Each question will carry 5 points");  
+     printf("\n >> Each question will carry 10 points");  
      printf("\n >> You will be asked questions continuously.");  
      printf("\n >> There is no negative marking for wrong answer");  
   
@@ -77,7 +77,7 @@ void start()
   
           FILE *fp;  
   
-          if((fp=fopen("\\tmp\play2.txt","a"))==NULL)  
+          if((fp=fopen("\\tmp\play1.txt","a"))==NULL)  
              {  
                  printf("error opening file\n");  
              }  
@@ -92,12 +92,12 @@ void start()
         printf("******************* Welcome \" %s \"  to C Quiz Game *************************** \n\n", p.name);  
   
   
-        printf("Q(1).Grand Central Terminal, Park Avenue, New York is the world's \n 1.largest railway station \t\t2.highest railway station\n 3.longest railway station\t\t 4.None of the above\n\n");  
+        printf("Q(1).What is git \n 1.Open Source Project \t\t2.Distributed Version Control System \n 3.Secured By SHA1\t\t 4.All of the above\n\n");  
   
         printf("Your answer: ");  
         scanf("%d",&answere);  
   
-        if(answere==1)  
+        if(answere==4)  
         {  
             printf("Correct! +10 points\n\n");  
             ++count;  
@@ -105,10 +105,10 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 1.largest railway station\n\n");  
+            printf("Wrong answer! Correct answer is 4.All of the above\n\n");  
         }  
   
-        printf("Q(2) Entomology is the science that studies \n 1.Behavior of human beings\t\t2.Insects \n3.The origin and history of technical and scientific terms\n4.The formation of rocks\n\n");  
+        printf("Q(2) Which vendor acquired GitHub for $7.5 billion in June 2018? \n 1.Oracle\t\t 2.Microsoft \n3.Google\n4.IBM\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
   
@@ -121,11 +121,11 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 2. Score deducted -10\n\n");
-            count--;  
+            printf("Wrong answer! Correct answer is 2.Microsoft\n\n");
+              
         }  
   
-        printf("Q(3) Eritrea, which became the 182nd member of the UN in 1993, is in the continent of \n1.Asia\t\t2.Africa\n3.Europe\t4.Australia\n\n");  
+        printf("Q(3) Which of the following is not a Git configuration scope? \n1.Local\t\t2.User\n3.System\t4.Global\n\n");  
   
         printf("Your answer: ");  
         scanf("%d",&answere);  
@@ -138,8 +138,8 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 2.Africa\n Score deducted -10\n");
-            count--;  
+            printf("Wrong answer! Correct answer is 2.User\n\n");
+              
         }  
   
   
@@ -433,7 +433,7 @@ void high_score()
     int ch;  
   
     FILE *fp;  
-    if((fp=fopen("\\tmp\play2.txt", "r"))==NULL)  
+    if((fp=fopen("\\tmp\play1.txt", "r"))==NULL)  
           {  
                 //printf("error opening file\n");  
                 printf("\nNo games played yet!\n");  
