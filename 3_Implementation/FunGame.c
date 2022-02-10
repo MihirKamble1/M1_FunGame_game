@@ -1,12 +1,9 @@
-#include<stdio.h>  
-#include<stdlib.h>  
-#include<conio.h>
-#include<FunGame.h>  
-  
-struct play {  
+#include<stdio.h>
+#include<stdlib.h>
+  struct play {  
             char name[20];  
             int score;  
-            int rat;       //star ratings  
+            int stars;       //star ratings  
 }p;  
   
 void high_score();  
@@ -14,8 +11,7 @@ void start();
 void help();  
   
 void main()  
-{  
-    clrscr();  
+{    
        int chc=0;  
   
     printf("Press 1 to start the game\n2 to see high scores \n3 to see game help\n0 to exit :   ");  
@@ -36,7 +32,7 @@ void main()
         break;  
   
           default:  
-          exit(1);  
+        exit(1);  
     }  
   
   getch();  
@@ -99,11 +95,11 @@ void start()
         printf("Q(1).Grand Central Terminal, Park Avenue, New York is the world's \n 1.largest railway station \t\t2.highest railway station\n 3.longest railway station\t\t 4.None of the above\n\n");  
   
         printf("Your answer: ");  
-        scanf("%d",&ans);  
+        scanf("%d",&answere);  
   
         if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
             ++count;  
   
         }  
@@ -134,7 +130,7 @@ void start()
         printf("Your answer: ");  
         scanf("%d",&answere);  
   
-        if(ans==2)  
+        if(answere==2)  
         {  
             printf("Correct! +10 points\n\n");  
   
@@ -152,22 +148,22 @@ void start()
         scanf("%d",&answere);  
         if(answere==2)  
         {  
-            printf("Correct! 10 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 2.Diphu, Assam\n Score deducted -10\n");
-            count--;  
+            printf("Wrong answer! Correct answer is 2.Diphu, Assam\n\n");
+              
         }  
   
         printf("Q(5).For which of the following disciplines is Nobel Prize awarded? \n1.Physics and Chemistry\t2.Physiology or Medicine\n3.Literature, Peace and Economics\t4.All of the above\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==4)  
+        scanf("%d",&answere);  
+        if(answere==4)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -178,10 +174,10 @@ void start()
   
         printf("Q(6).Hitler party which came into power in 1933 is known as \n1.Labour Party\t2.Nazi Party\n3.Ku-Klux-Klan\t4.Democratic Party\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==2)  
+        scanf("%d",&answere);  
+        if(answere==2)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -192,10 +188,10 @@ void start()
   
         printf("Q(7). FFC stands for \n1.Foreign Finance Corporation\t2.Film Finance Corporation\n3.Federation of Football Council\t4.None of the above\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==2)  
+        scanf("%d",&answere);  
+        if(answere==2)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -206,10 +202,10 @@ void start()
   
         printf("Q(8). Fastest shorthand writer was \n1.Dr. G. D. Bist\t2. J.R.D. Tata\n3. J.M. Tagore\t4. Khudada Khan\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==1)  
+        scanf("%d",&answere);  
+        if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -220,10 +216,10 @@ void start()
   
         printf("Q(9). Epsom (England) is the place associated with \n1.Horse racing\t2.Polo\n3.Shooting\t4.Snooker\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==1)  
+        scanf("%d",&answere);  
+        if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -234,10 +230,10 @@ void start()
   
         printf("Q(10). First human heart transplant operation conducted by Dr. Christian Bernard on Louis Washkansky, was conducted in \n1.1967\t2.1968\n3.1958\t4.1922\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==1)  
+        scanf("%d",&answere);  
+        if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -248,10 +244,10 @@ void start()
   
         printf("Q(11). Frames from one LAN can be transmitted to another LAN via the device \n1. Router\t2. Bridge\n3. Repeater\t4. Modem\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==2)  
+        scanf("%d",&answere);  
+        if(answere==2)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -262,10 +258,10 @@ void start()
   
         printf("Q(12). Which of the following condition is used to transmit two packets over a medium at the same time?\n1. Contention\t2.  Collision\n3.   Synchronous\tD. Asynchronous\n\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==2)  
+        scanf("%d",&answere);  
+        if(answere==2)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -276,10 +272,10 @@ void start()
   
         printf("Q(13). What are the most commonly used transmission speeds in BPS used in data communication?\n1.   300\t2. 1200\n3.   2400\t4. 9600\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==4)  
+        scanf("%d",&answere);  
+        if(answere==4)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -290,10 +286,10 @@ void start()
   
         printf("Q(14).  Which of the following is used for modulation and demodulation?\n1. modem\t2. protocols\n3. gateway\t4. multiplexer\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==1)  
+        scanf("%d",&answere);  
+        if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -304,10 +300,10 @@ void start()
   
         printf("Q(15). Contention is \n1. One or more conductors that serve as a common connection for a related group of devices\n2.   a continuous frequency capable of being modulated or impressed with a second signal\n3.  the condition when two or more stations attempt to use the same channel at the same time\n4.   a collection of interconnected functional units that provides a data communications service among stations attached to the network\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==3)  
+        scanf("%d",&answere);  
+        if(answere==3)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -318,10 +314,10 @@ void start()
   
         printf("Q(16). When you ping the loopback address, a packet is sent where?\n1. On the network\n2. Down through the layers of the IP architecture and then up the layers again\n3. Across the wire\n4. through the loopback dongle\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==2)  
+        scanf("%d",&answere);  
+        if(answere==2)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -332,10 +328,10 @@ void start()
   
         printf("Q(17). Which of the following TCP/IP protocol is used for transferring electronic mail messages from one machine to another?\n1. FTP\t2.    SNMP\n3. SMTP\t4. RPC\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==3)  
+        scanf("%d",&answere);  
+        if(answere==3)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -346,10 +342,10 @@ void start()
   
         printf("Q(18). Which of the following device is used to connect two systems, especially if the systems use different protocols?\n1. hub\t2. bridge\n3. gateway\t4. repeater\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==3)  
+        scanf("%d",&answere);  
+        if(answere==3)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -360,10 +356,10 @@ void start()
   
         printf("Q(19). The slowest transmission speeds are those of\n1. twisted-pair wire\t2. coaxial cable\n3. fiber-optic cable\t4.   microwaves\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==1)  
+        scanf("%d",&answere);  
+        if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -374,10 +370,10 @@ void start()
   
         printf("Q(20). What is the port number for NNTP?\n1. 119\t2. 80\n3. 79\t4. 70\n");  
         printf("Your answer: ");  
-        scanf("%d",&ans);  
-        if(ans==1)  
+        scanf("%d",&answere);  
+        if(answere==1)  
         {  
-            printf("Correct! +5 points\n\n");  
+            printf("Correct! +10 points\n\n");  
   
                 ++count;  
         }  
@@ -390,39 +386,39 @@ void start()
         //counting number of correct answers and, ratings  
         if(count > 0)  
         {  
-                printf("Thanks for playing, Your scored: %d points \t", count*5);  
+                printf("Thanks for playing, Your scored: %d points \t", count*10);  
   
-                p.score=count*5;  
+                p.score=count*10;  
   
                 if(p.score >= 80)  
                 {  
                     printf("Rating: * * * * *");  
-                    p.rat=5;  
+                    p.stars=5;  
                 }  
                 else if(p.score >= 60 && p.score < 80)  
                 {  
                     printf("Rating: * * * *");  
-                    p.rat=4;  
+                    p.stars=4;  
                 }  
                 else if(p.score >= 40 && p.score < 60)  
                 {  
                     printf("Rating: * * *");  
-                  p.rat=3;  
+                  p.stars=3;  
                 }  
                 else if(p.score >= 20 && p.score < 40)  
                 {  
                     printf("Rating: * *");  
-                    p.rat=2;  
+                    p.stars=2;  
                 }  
                 else if(p.score < 20)  
                 {  
                     printf("Rating: *");  
-                     p.rat=1;  
+                     p.stars=1;  
                 }  
   
             //writing to file  
   
-                    fprintf(fp,"%s %d %d", p.name,p.score,p.rat);  
+                    fprintf(fp,"%s %d %d", p.name,p.score,p.stars);  
                     fclose(fp);  
         }  
         else  
@@ -447,10 +443,10 @@ void high_score()
   
     printf("\n******************************* HIGH SCORES *******************************\n\n");  
     printf("NAME     POINTS     RATING\n");  
-    while(fscanf(fp,"%s %d %d",p.name,&p.score, &p.rat) !=EOF)  
+    while(fscanf(fp,"%s %d %d",p.name,&p.score, &p.stars) !=EOF)  
     {  
         printf("____________________________\n");  
-        printf("%s     %d     %d star(s)\n\n",p.name,p.score,p.rat);  
+        printf("%s     %d     %d star(s)\n\n",p.name,p.score,p.stars);  
     }  
   
     fclose(fp);  
