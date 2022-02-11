@@ -51,7 +51,7 @@ void help()
      printf("\n >> You will be asked questions continuously.");  
      printf("\n >> There will be negative marking for wrong answer 10 points will be deducted");  
   
-    printf("\n\n ************************* BEST OF LUCK *************************\n\n");  
+      
   
   
     printf("\nContinue playing ? (1/0) :  ");  
@@ -145,10 +145,10 @@ void start()
         }  
   
   
-        printf("Q(4).Garampani sanctuary is located at \n1.Junagarh, Gujarat\t2.Diphu, Assam\n3.Kohima, Nagaland\t4.Gangtok, Sikkim\n\n");  
+        printf("Q(4).What is the base data type of a pointer variable by which the memory would be allocated to it \n1. int\t2.float\n3.No data type\t4.unsigned int\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
-        if(answere==2)  
+        if(answere==3)  
         {  
             printf("Correct! +10 points\n\n");  
   
@@ -156,7 +156,7 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 2.Diphu, Assam\n\n");
+            printf("Wrong answer! Correct answer is 3. No data type\n\n");
           --count;
               
         }  
