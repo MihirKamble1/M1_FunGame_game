@@ -2,10 +2,12 @@
  It is a platform that allows peers to take quiz at the same time and judge their knowledge and calculation abilities.
 
 ## High Level Requirement
- Questions
+ * Questions 
+ * Grading 
 
 ## Low Level Requirement 
- There should be questions related to Science, Maths, General knoledge, and the subject they are learning
+ * There should be questions related to Science, Maths, General knoledge, and the subject they are learning.
+ 
 
 ## Swot Analysis
 ![](2022-02-11-02-36-17.png)
