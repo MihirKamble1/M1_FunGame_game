@@ -161,7 +161,52 @@ void start()
               
         }  
   
-        printf("Q(5).For which of the following disciplines is Nobel Prize awarded? \n1.Physics and Chemistry\t2.Physiology or Medicine\n3.Literature, Peace and Economics\t4.All of the above\n\n");  
+        printf("Q(5).How to add standard input or output header file in c program \n1.#include<stdio.h>\t2.#header<stdio.h>\n3. #include<standardio.h>\t4.#include<io.h>\n\n");  
+        printf("Your answer: ");  
+        scanf("%d",&answere);  
+        if(answere==1)  
+        {  
+            printf("Correct! +10 points\n\n");  
+  
+                ++count;  
+        }  
+        else  
+        {  
+            printf("Wrong answer! Correct answer is 1.#include<stdio.b>\n\n");
+          --count;
+        }  
+  
+        printf("Q(6).The preprocessor directive which is used to remove the defination of an indentifier which was previously defined with #define \n1.#ifdef\t2.#undef\n3.#ifndef\t4.#def\n\n");  
+        printf("Your answer: ");  
+        scanf("%d",&answere);  
+        if(answere==2)  
+        {  
+            printf("Correct! +10 points\n\n");  
+  
+                ++count;  
+        }  
+        else  
+        {  
+            printf("Wrong answer! Correct answer is 2.#undef\n\n");
+          --count;
+        }  
+  
+        printf("Q(7). What is the key word used to define a macro.? \n1.def\t2.defination\n3.define\t4.defy\n\n");  
+        printf("Your answer: ");  
+        scanf("%d",&answere);  
+        if(answere==3)  
+        {  
+            printf("Correct! +10 points\n\n");  
+  
+                ++count;  
+        }  
+        else  
+        {  
+            printf("Wrong answer! Correct answer is 3.define\n\n");
+          --count;
+        }  
+  
+        printf("Q(8). Which of the following is not a preprosessor directive\n1.#error\t2.#pragma\n3.#if\t4.#ifelse\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
         if(answere==4)  
@@ -172,14 +217,14 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 4.All of the above\n\n");
+            printf("Wrong answer! Correct answer is 4.#ifelse\n\n");
           --count;
         }  
   
-        printf("Q(6).Hitler party which came into power in 1933 is known as \n1.Labour Party\t2.Nazi Party\n3.Ku-Klux-Klan\t4.Democratic Party\n\n");  
+        printf("Q(9). A pointer variable can be \n1.Passed to a function\t2.Changed within a function\n3.Returned by a function\t4.Can be assigned a integer value\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
-        if(answere==2)  
+        if(answere==3)  
         {  
             printf("Correct! +10 points\n\n");  
   
@@ -187,26 +232,11 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 2.Nazi Party\n\n");
+            printf("Wrong answer! Correct answer is 3.Returned by function\n\n");
           --count;
         }  
   
-        printf("Q(7). FFC stands for \n1.Foreign Finance Corporation\t2.Film Finance Corporation\n3.Federation of Football Council\t4.None of the above\n\n");  
-        printf("Your answer: ");  
-        scanf("%d",&answere);  
-        if(answere==2)  
-        {  
-            printf("Correct! +10 points\n\n");  
-  
-                ++count;  
-        }  
-        else  
-        {  
-            printf("Wrong answer! Correct answer is 2.Film Finance Corporation\n\n");
-          --count;
-        }  
-  
-        printf("Q(8). Fastest shorthand writer was \n1.Dr. G. D. Bist\t2. J.R.D. Tata\n3. J.M. Tagore\t4. Khudada Khan\n\n");  
+        printf("Q(10). The value of L1/2.L5/2JJ is\n1.1\t2.2\n3.3\t\.0.5\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
         if(answere==1)  
@@ -217,14 +247,14 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 1.Dr. G. D. Bist\n\n");
+            printf("Wrong answer! Correct answer is 1. 1\n\n");
           --count;
         }  
   
-        printf("Q(9). Epsom (England) is the place associated with \n1.Horse racing\t2.Polo\n3.Shooting\t4.Snooker\n\n");  
+        printf("Q(11). Which of the following function f:ZXZ=Z IS not onto \n1. f(a,b)=a+b\t2. f(a,b)=a\n3. f(a,b)=modb\t4.f(a,b)=a+b\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
-        if(answere==1)  
+        if(answere==3)  
         {  
             printf("Correct! +10 points\n\n");  
   
@@ -232,14 +262,14 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 1.Horse racing\n\n");
+            printf("Wrong answer! Correct answer is 2. f(a,b)=mob\n\n");
           --count;
         }  
   
-        printf("Q(10). First human heart transplant operation conducted by Dr. Christian Bernard on Louis Washkansky, was conducted in \n1.1967\t2.1968\n3.1958\t4.1922\n\n");  
+        printf("Q(12). The domain of the function that assign to each pair of integers the maximum of these\n1. N\t2. Z\n3.  Z*\t4. Z*XZ*\n\n");  
         printf("Your answer: ");  
         scanf("%d",&answere);  
-        if(answere==1)  
+        if(answere==4)  
         {  
             printf("Correct! +10 points\n\n");  
   
@@ -247,37 +277,7 @@ void start()
         }  
         else  
         {  
-            printf("Wrong answer! Correct answer is 1. 1967\n\n");
-          --count;
-        }  
-  
-        printf("Q(11). Frames from one LAN can be transmitted to another LAN via the device \n1. Router\t2. Bridge\n3. Repeater\t4. Modem\n\n");  
-        printf("Your answer: ");  
-        scanf("%d",&answere);  
-        if(answere==2)  
-        {  
-            printf("Correct! +10 points\n\n");  
-  
-                ++count;  
-        }  
-        else  
-        {  
-            printf("Wrong answer! Correct answer is 2. Bridge\n\n");
-          --count;
-        }  
-  
-        printf("Q(12). Which of the following condition is used to transmit two packets over a medium at the same time?\n1. Contention\t2.  Collision\n3.   Synchronous\tD. Asynchronous\n\n");  
-        printf("Your answer: ");  
-        scanf("%d",&answere);  
-        if(answere==2)  
-        {  
-            printf("Correct! +10 points\n\n");  
-  
-                ++count;  
-        }  
-        else  
-        {  
-            printf("Wrong answer! Correct answer is 2. Collision\n\n");
+            printf("Wrong answer! Correct answer is 4. *Z*XZ*\n");
           --count;
         }  
   
