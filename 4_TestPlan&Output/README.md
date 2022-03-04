@@ -1,2 +1,2 @@
 # Test Plan
-* Pass the Commands which is displayed in console
+* Pass the Commands which is displayed in the console
